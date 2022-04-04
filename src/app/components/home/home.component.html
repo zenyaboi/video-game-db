@@ -1,0 +1,32 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img
+        src="https://image.api.playstation.com/cdn/UP9000/CUSA00900_00/FREE_CONTENTlyKbnDbpSNSLt4MIxZ0j/PREVIEW_SCREENSHOT7_73423.jpg"
+        alt="thumbnail"
+        class="game-thumbnail"
+      />
+    </div>
+    <div class="game-description">
+      <p class="game-name">Name</p>
+      <div class="game-platforms">
+        <img src="" alt="slug" class="game-platform" />
+      </div>
+    </div>
+  </div>
+</div>
